@@ -1,0 +1,46 @@
+{
+    "name": "digiclicks-main-email-system",
+    "version": "1.0.0",
+    "description": "Cold Email System DigiClicks",
+    "main": "server.js",
+    "homepage": ".",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix ../client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Risto Radanliev",
+    "license": "MIT",
+    "dependencies": {
+        "@cpanel/api": "^5.1.2",
+        "axios": "^0.24.0",
+        "bcryptjs": "^2.4.3",
+        "client-oauth2": "^4.3.3",
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "csv-parse": "^5.5.3",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.1",
+        "form-data": "^4.0.0",
+        "fs": "^0.0.1-security",
+        "json2csv": "^6.0.0-alpha.2",
+        "jsonwebtoken": "^8.5.1",
+        "kickbox": "^2.0.4",
+        "md5": "^2.3.0",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.43",
+        "mongoose": "^5.12.4",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.5-lts.1",
+        "node-cron": "^3.0.3",
+        "request": "^2.88.2",
+        "rss-parser": "^3.12.0",
+        "xml2js": "^0.6.2"
+    },
+    "devDependencies": {
+        "concurrently": "^6.0.2",
+        "nodemon": "^2.0.7"
+    }
+}
